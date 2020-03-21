@@ -1,0 +1,1044 @@
+@font-face {
+    font-family: Quicksand-light;
+    src: url(Quicksand-Light.ttf);
+}
+
+@media screen, print {
+
+/*** HIDE WP STUFF ***/
+/*#wpfooter,  /* footer with 'thank you' and wp version number */
+/*.type-kik_company > .post-title > .row-actions,  /* quick edit links */
+/*.subsubsub,  /* All | Published | Trash */
+/*#posts-filter > .search-box,  /* post listing search box */
+/*.tablenav > .actions,*/
+/*.tablenav > .tablenav-pages,*/
+/*.tablenav > .view-switch,
+#filter-by-date,
+.alignleft.actions.bulkactions,
+#wpadminbar > *,
+#posts-filter > .wp-list-table > tfoot,
+#screen-options-wrap,
+#screen-meta-links,
+#welcome-panel,
+#dashboard-widgets-wrap,
+#minor-publishing,
+.wpppppppppdummy {
+	display: none !important;
+}*/
+
+
+/*** OVERRIDE WP STUFF ***/
+#wpbody-content {
+	padding: 0;
+}
+#posts-filter > .wp-list-table > tbody > tr> th,
+#posts-filter > .wp-list-table > tbody > tr> td {
+	background: #ffffff;
+	border-bottom: 1px solid #E1E1E1;
+}
+#posts-filter > .wp-list-table > thead > tr > th,
+#posts-filter > .wp-list-table > thead > tr > th > a {
+	background: #e5e5e5;
+	border: 0;
+	font-weight: bold;
+}
+.tablenav.top {
+	padding-bottom: 10px;
+}
+
+
+/*** SIZES ***/
+.size_full_W_full_H {
+	width: 100%;
+	height: 100%;
+}
+.size_full_W {
+	width: 100%;
+}
+.size_full_W_2_rows {
+	width: 100%;
+	height: 50px;
+}
+.size_xs { width: 100px; }
+.size_s { width: 200px; }
+.size_m { width: 300px; }
+.size_l { width: 400px; }
+.size_xl { width: 500px; }
+.size_xxl { width: 600px; }
+.size_xs_p { width: 8%; }
+.size_s_p { width: 12%; }
+.size_m_p { width: 20%; }
+.size_l_p { width: 30%; }
+.size_xl_p { width: 40%; }
+.size_xxl_p { width: 60%; }
+.size_50px { width: 50px; }
+.size_2_rows { height: 50px; }
+
+.box_H_margin {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+/*** COLORS ***/
+.color-red,
+.color-red * { color: #dc230c; }
+.color-orange,
+.color-orange * { color: #EB8500; }
+.color-blue,
+.color-blue * { color: #1155cc; }
+.color-green,
+.color-green * { color: #148908; }
+
+
+/*** ALIGNMENT ***/
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+
+
+/*** DISPLAY ***/
+.display-none { display: none; }
+.display-block { display: block; }
+
+
+/*** FRONT END: COMPANIES ***/
+table.kik_table.table_type_main {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 25px;
+}
+table.kik_table.table_type_main tr {
+	width: 100%;
+	border-top: 2px solid #ffffff;
+	background-color: #ececec;
+}
+table.kik_table.table_type_main tr.last {
+	border-bottom: 0;
+}
+table.kik_table.table_type_main tr.last td {
+	text-align: center;
+	padding: 15px 0 5px;
+	background: none;
+}
+table.kik_table.table_type_main td,
+table.kik_table.table_type_main th {
+	padding: 1px 3px;
+}
+table.kik_table.table_type_main th {
+	background-color: #adb1a9;
+	color: #ffffff;
+}
+table.kik_table.table_type_main td {
+	vertical-align: top;
+}
+
+table.kik_table.companies.table_type_main th:nth-child(1),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(1) { width: 75px; text-align: left; }
+table.kik_table.companies.table_type_main th:nth-child(2),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(2) { width: 38%; text-align: left; }
+table.kik_table.companies.table_type_main th:nth-child(3),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(3) { width: 16%; text-align: left; }
+table.kik_table.companies.table_type_main th:nth-child(4),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(4) { width: 23%; text-align: left; }
+table.kik_table.companies.table_type_main th:nth-child(5),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(5) { width: 23%; text-align: left; }
+table.kik_table.companies.table_type_main th:nth-child(6),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(6) { width: 100px; text-align: left; }
+table.kik_table.companies.table_type_main th:nth-child(7),
+table.kik_table.companies.table_type_main table.table_type_row td:nth-child(7) { width: 120px; text-align: left; }
+
+
+
+/** USERS **/
+
+table.kik_table.users.table_type_main th:nth-child(1),
+table.kik_table.users.table_type_main table.table_type_row td:nth-child(1) { width: 40px; text-align: left; }
+table.kik_table.users.table_type_main th:nth-child(2),
+table.kik_table.users.table_type_main table.table_type_row td:nth-child(2) { width: 38%; text-align: left; }
+table.kik_table.users.table_type_main th:nth-child(3),
+table.kik_table.users.table_type_main table.table_type_row td:nth-child(3) { width: 24%; text-align: left; }
+table.kik_table.users.table_type_main th:nth-child(4),
+table.kik_table.users.table_type_main table.table_type_row td:nth-child(4) { width: 38%; text-align: left; }
+table.kik_table.users.table_type_main th:nth-child(5),
+table.kik_table.users.table_type_main table.table_type_row td:nth-child(5) { width: 160px; text-align: left; }
+
+table.kik_company_fields.users.table_type_main[data-tab="Datele contului"] th:nth-child(1),
+table.kik_company_fields.users.table_type_main[data-tab="Datele contului"] table.table_type_row tr td:nth-child(1) { width: 200px; text-align: left; }
+table.kik_company_fields.users.table_type_main[data-tab="Datele contului"] th:nth-child(2),
+table.kik_company_fields.users.table_type_main[data-tab="Datele contului"] table.table_type_row tr td:nth-child(2) { width: 100%; text-align: left; }
+
+table.kik_company_fields.users.table_type_main #kik_user_companies_sales_available,
+table.kik_company_fields.users.table_type_main #kik_user_companies_sales_associated,
+table.kik_company_fields.users.table_type_main #kik_user_companies_inspector_available,
+table.kik_company_fields.users.table_type_main #kik_user_companies_inspector_associated { width: 100%; height: 300px; }
+table.kik_company_fields.users.table_type_main button { width: 160px; height: 25px; }
+
+
+
+.kik_company_post_listing_title {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.kik_company_post_listing_cif_reg {
+	color: #999999;
+}
+.kik_company_post_listing_btn_update {
+	/* display: inline-block;
+	padding: 8px 12px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: normal;
+	border: 1px solid #0074A2;
+	background-color: #2ea2cc;
+	box-shadow: inset 0 1px 0 
+		rgba(120,200,230,.5),0 1px 0 
+		rgba(0,0,0,.15);
+	color: #ffffff;
+	cursor: pointer;
+	opacity: 0.3; */
+}
+.kik_company_post_listing_btn_update:hover {
+	/* opacity: 1.0; */
+}
+
+
+.kik_company_wrapper_link {
+	text-decoration: none;
+}
+.kik_company_wrapper {
+	display: block;
+	padding: 7px 13px;
+	margin: 5px 0 0 5px;
+	border-radius: 5px;
+	background-color: #bed9a3;
+	color: #000000;
+}
+.kik_company_wrapper:hover {
+	background-color: #718f53;
+	color: #ffffff;
+}
+
+
+.kik_company_title {
+	width: 100%;
+	/* height: 36px; */
+	padding: 20px 0 16px;
+}
+.kik_company_title_tag {
+	display: inline-block;
+	font-size: 24px;
+	margin-right: 3px;
+	font-weight: bold;
+}
+.kik_company_title_input {
+	display: inline-block;
+	font-size: 24px;
+	margin-right: 8px;
+}
+
+
+
+.kik_save_area {
+	width: 100%;
+	margin-bottom: 25px;
+}
+/* .kik_save_btn {
+	display: inline-block;
+	padding: 8px 12px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: normal;
+	border: 1px solid #0074A2;
+	background-color: #2ea2cc;
+	box-shadow: inset 0 1px 0 
+		rgba(120,200,230,.5),0 1px 0 
+		rgba(0,0,0,.15);
+	color: #ffffff;
+} */
+/* .kik_save_btn:hover {
+	background-color: #1e8cbe;
+} */
+.kik_save_btn i {
+	color: #ffffff;
+}
+.kik_save_btn_response {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.kik_delete_btn, .delete-company {
+	display: inline-block;
+	font-weight: normal;
+	padding: 8px 12px;
+	float: right;
+	float: right;
+	text-decoration: none;
+}
+
+#kik_company_tabs_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	display: none;
+	opacity: 0.0;
+}
+
+.column-kik_company_flags { width: 70px; }
+.column-title { /*width: 38%;*/ }
+.column-kik_company_title { width: 38%; }
+.column-kik_company_cif_reg { /*width: 12%;*/ }
+.column-kik_company_service_frequency { width: 16%; }
+.column-kik_company_contact_person { width: 23%; }
+.column-kik_company_billing { /*width: 10%;*/ }
+.column-kik_company_assignees { width: 23%; }
+.column-author { /*width: 10%;*/ }
+.column-date { /*width: 10%;*/ }
+.column-kik_company_status { width: 100px; }
+.column-kik_company_actions { width: 120px; }
+
+
+
+/*** POST LISTING: COMPANY: select boxes ***/
+.kik_company_post_listing_select_row {
+	min-height: 35px;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.kik_company_post_listing_select_row_edit {
+	/* margin: 0 10px 0 13px; */
+	height: 100%;
+}
+.kik_company_post_listing_select_row_edit > i {
+	left: 0;
+	top: 5px;
+}
+.kik_company_post_listing_select_row_edit > select {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/*height: 100%;*/
+	font-size: 13px;
+	color: inherit;
+}
+.kik_company_post_listing_select_row_edit > select > option {
+	margin: 0;
+	padding: 0;
+}
+
+/*** POST LISTING: COMPANY: buttons ***/
+.kik_company_actions .button {
+	opacity: 0.3;
+}
+.kik_company_actions .button:hover {
+	opacity: 1.0;
+}
+
+/*** POST EDIT: COMPANY ***/
+input.entry-title {
+	font-size: 24px;
+	font-style: bold;
+	height: 30px;
+	margin: 0 13px 0 3px;
+}
+.kik_company_tab {
+	display: none;
+}
+table.table_type_row {
+	table-layout: fixed;
+	width: 100%;
+	margin: 6px 0;
+}
+table.kik_company_fields.table_type_main {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+table.kik_company_fields.table_type_main,
+table.kik_company_fields.table_type_main tr {
+	width: 100%;
+	border-bottom: 2px solid #adb1a9;
+}
+table.kik_company_fields.table_type_main,
+table.kik_company_fields.table_type_main tr.last {
+	border-bottom: 0;
+}
+table.kik_company_fields.table_type_main tr.last td {
+	text-align: center;
+	padding: 15px 0 5px;
+}
+table.kik_company_fields.table_type_main td,
+table.kik_company_fields.table_type_main th {
+	padding: 1px 3px;
+}
+table.kik_company_fields.table_type_main th {
+	background-color: #adb1a9;
+	color: #ffffff;
+}
+table.kik_company_fields.table_type_main td {
+	background-color: #ececec;
+}
+table.kik_company_fields.table_type_main td .new {
+	background-color: #FFFEC4;
+}
+table.kik_company_fields.table_type_main[data-tab="Date societate"] th:nth-child(1),
+table.kik_company_fields.table_type_main[data-tab="Date societate"] table.table_type_row tr td:nth-child(1) { width: 200px; text-align: left; }
+table.kik_company_fields.table_type_main[data-tab="Date societate"] th:nth-child(2),
+table.kik_company_fields.table_type_main[data-tab="Date societate"] table.table_type_row tr td:nth-child(2) { width: 100%; text-align: left; }
+.kik_company_fields_title {
+	font-size: 18px;
+	margin-bottom: 19px;
+	font-weight: bold;
+	width: 100%;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #000000;
+}
+.kik_company_fields_footer {
+	margin-top: 10px;
+	margin-bottom: 19px;
+	width: 100%;
+	border-bottom: 2px solid #000000;
+}
+#kik_company_tab_titles {
+	min-height: 33px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+a.kik_company_tab_title,
+a.kik_company_tab_title_active {
+	display: inline-block;
+	padding: 7px 13px;
+	margin: 3px 0 0 3px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+a.kik_company_tab_title {
+	background-color: #bed9a3;
+	color: #000000;
+}
+a.kik_company_tab_title:hover,
+a.kik_company_tab_title_active {
+	background-color: #718f53;
+	color: #ffffff;
+}
+#kik_company_tabs {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+/*** Import ***/
+#UploadStuff ul,
+#UploadStuff ol { padding-left: 20px; margin: 0; }
+#UploadStuff > ul { list-style-type: disc; }
+#UploadStuff > ul > li > ul { list-style-type: circle; }
+#UploadStuff ol * { color: #ff6600; }
+#UploadStuff li { margin: 0; }
+#UploadStuff p { margin: 0 0 3px 0; }
+#UploadStuff form { display: inline; }
+#UploadFacturi_message,
+#UploadAngajati_message { background-color: #fbfceb; border: 1px solid #bc9c9c; padding: 12px 16px; margin-bottom: 25px; display: none; }
+
+
+/*** MESSAGES ***/
+.kik_error { color: #dc230c; }
+.kik_warning { color: #EB8500; }
+.kik_info { color: #1155cc; }
+.kik_success { color: #148908; }
+
+.kik_code { display: inline; background-color: #f5f7d3; border: 1px solid #c7a4cb; padding: 0 2px; font-family: "Courier New", Courier, monospace; }
+
+
+
+
+table.kik_company_fields.table_type_main.reports th:nth-child(1),
+table.kik_company_fields.table_type_main.reports table.table_type_row tr td:nth-child(1) { width: 200px; text-align: left; }
+table.kik_company_fields.table_type_main.reports th:nth-child(2),
+table.kik_company_fields.table_type_main.reports table.table_type_row tr td:nth-child(2) { width: 100%; text-align: left; }
+
+
+table.report_body {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+table.report_body * {
+	font-size: 10px;
+	font-weight: normal;
+}
+table.report_body tr {
+	/*page-break-before: always;*/  /* doesn't work */
+}
+table.report_body th,
+table.report_body td {
+	border: 1px solid #000000;
+	text-align: center;
+}
+
+table.report_body td:nth-child(1) { width: 3.125%; }
+table.report_body td:nth-child(2) { width: 9.375%; }
+table.report_body td:nth-child(3) { width: 12.5%; }
+table.report_body td:nth-child(4) { width: 6.25%; }
+table.report_body td:nth-child(5) { width: 3.125%; }
+table.report_body td:nth-child(6) { width: 3.125%; }
+table.report_body td:nth-child(7) { width: 3.125%; }
+table.report_body td:nth-child(8) { width: 3.125%; }
+table.report_body td:nth-child(9) { width: 6.25%; }
+table.report_body td:nth-child(10) { width: 6.25%; }
+table.report_body td:nth-child(11) { width: 6.25%; }
+table.report_body td:nth-child(12) { width: 6.25%; }
+table.report_body td:nth-child(13) { width: 6.25%; }
+table.report_body td:nth-child(14) { width: 6.25%; }
+table.report_body td:nth-child(15) { width: 6.25%; }
+table.report_body td:nth-child(16) { width: 6.25%; }
+table.report_body td:nth-child(17) { width: 6.25%; }
+table.report_body td:nth-child(18) { width: 6.25%; }
+
+
+
+table.report_list {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+table.report_list th,
+table.report_list td {
+	border: 1px solid #000000;
+	padding: 2px 3px;
+}
+table.report_list th {
+	font-weight: bold;
+}
+
+.report_sheet.instructaj table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.instructaj table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 45%; text-align: left; }
+.report_sheet.instructaj table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 37%; text-align: left; }
+.report_sheet.instructaj table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 18%; text-align: left; }
+
+.report_sheet.activitati_nerealizate table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.activitati_nerealizate table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 45%; text-align: left; }
+.report_sheet.activitati_nerealizate table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 37%; text-align: left; }
+.report_sheet.activitati_nerealizate table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 18%; text-align: left; }
+
+.report_sheet.pv_instructaj table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.pv_instructaj table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 45%; text-align: left; }
+.report_sheet.pv_instructaj table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 37%; text-align: left; }
+.report_sheet.pv_instructaj table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 18%; text-align: left; }
+
+.report_sheet.echipamente table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.echipamente table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 45%; text-align: left; }
+.report_sheet.echipamente table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 37%; text-align: left; }
+.report_sheet.echipamente table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 18%; text-align: left; }
+
+.report_sheet.debite_neincasate table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.debite_neincasate table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 28%; text-align: left; }
+.report_sheet.debite_neincasate table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 12%; text-align: left; }
+.report_sheet.debite_neincasate table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 14%; text-align: left; }
+.report_sheet.debite_neincasate table.report_list th:nth-child(5), table.report_list td:nth-child(5) { width: 10%; text-align: left; }
+.report_sheet.debite_neincasate table.report_list th:nth-child(6), table.report_list td:nth-child(6) { width: 18%; text-align: left; }
+.report_sheet.debite_neincasate table.report_list th:nth-child(7), table.report_list td:nth-child(7) { width: 18%; text-align: left; }
+
+.report_sheet.facturi table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 30px; text-align: center; }
+.report_sheet.facturi table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 40%; text-align: left; }
+.report_sheet.facturi table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 28%; text-align: left; }
+.report_sheet.facturi table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 30%; text-align: left; }
+.report_sheet.facturi table.report_list th:nth-child(5), table.report_list td:nth-child(5) { width: 14%; text-align: left; }
+.report_sheet.facturi table.report_list th:nth-child(6), table.report_list td:nth-child(6) { width: 10; text-align: left; }
+
+.report_sheet.facturi table.report_list tr:nth-child(2) th:nth-child(1), 
+.report_sheet.facturi table.report_list tr:nth-child(2) td:nth-child(1) { width: 12%; }
+
+.report_sheet.facturi table.report_list tr:nth-child(2) th:nth-child(2), 
+.report_sheet.facturi table.report_list tr:nth-child(2) td:nth-child(2) { width: 14%; text-align: left; }
+
+.report_sheet.facturi table.report_list tr:nth-child(2) th:nth-child(3), .report_sheet.facturi table.report_list tr:nth-child(2) td:nth-child(3) { width: 10%; text-align: left; }
+
+.report_sheet.angajati_noi table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.angajati_noi table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 41%; text-align: left; }
+.report_sheet.angajati_noi table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 29%; text-align: left; }
+.report_sheet.angajati_noi table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 12%; text-align: left; }
+.report_sheet.angajati_noi table.report_list th:nth-child(5), table.report_list td:nth-child(5) { width: 18%; text-align: left; }
+
+.report_sheet.accidente table.report_list th:nth-child(1), table.report_list td:nth-child(1){ width: 50px; text-align: center; }
+.report_sheet.accidente table.report_list th:nth-child(2), table.report_list td:nth-child(2) { width: 28%; text-align: left; }
+.report_sheet.accidente table.report_list th:nth-child(3), table.report_list td:nth-child(3) { width: 12%; text-align: left; }
+.report_sheet.accidente table.report_list th:nth-child(4), table.report_list td:nth-child(4) { width: 12%; text-align: left; }
+.report_sheet.accidente table.report_list th:nth-child(5), table.report_list td:nth-child(5) { width: 21%; text-align: left; }
+.report_sheet.accidente table.report_list th:nth-child(6), table.report_list td:nth-child(6) { width: 27%; text-align: left; }
+
+
+/*** AUTOHINT FIELDS ***/
+
+
+
+/*** ***/
+
+.report_box {
+	box-sizing: border-box;
+	min-height: 200px;
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #bbbbbb;
+}
+
+textarea { resize: vertical; }
+
+.kik_icons_container {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top: -3px;
+}
+.kik-data-square {
+	float: left;
+	min-width: 18px;
+	/* height: 16px; */
+	/* padding: 3px 4px; */
+	margin-left: 2px;
+	border-radius: 5px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.kik-alerts-container .kik-data-square:first-child {
+	margin-left: 0;
+}
+
+.kik_alerts { background-color: #b22b2b; }
+.kik_notifications { background-color: #d0ac3f; }
+.kik_alerts_bills { background-color: #8b49be; }
+
+.bg-info{
+	background-color: #17a2b8!important;
+}
+
+.bg-alert{
+	background-color: #dc3545!important;
+}
+
+}
+
+
+@media print {
+
+
+#header,
+.kik_company_title,
+#kik_company_tab_titles,
+table.kik_company_fields,
+.kik_company_fields_title,
+.kik_company_fields_footer,
+.kik_save_area,
+#print_no { display: none; }
+
+.print_no_border { border: none; background: none; }
+
+.report_container {
+	padding: 0;
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.report_sheet {
+	padding: 10px;
+	margin: 0;
+	background: none;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+}
+
+h2, h3, h4 {
+	font-family: Quicksand-light;	
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+	font-size: 25px;
+	margin-top: 0px;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+hr { 
+  border: 0; 
+  height: 1.5px; 
+  margin-bottom: 35px;
+  width: 50%;
+  background-image: -webkit-linear-gradient(left, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #8c8b8b, #f0f0f0); 
+}
+
+hr.full-width{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+/********************************************************************************************/
+/*                                     TABLES DESIGN
+/********************************************************************************************/
+
+.table {
+	border-collapse: collapse;
+}
+
+.table-bordered {
+	border: 0px;
+}
+
+.table td {
+	padding: 10px;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+	vertical-align: middle;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+	padding: 10px;
+    font-family: Quicksand-light;
+    font-size: 16px;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #e9ecef;
+}
+
+.kik-company-details, .kik-alerts-container  {
+	display: inline-block;
+}
+
+.kik-row-container{
+	display: table;
+	width: 100%;
+}
+
+.kik-alerts-container {
+	padding-top: 2px;
+	display: block;
+	vertical-align: middle;
+	padding-right: 7px;
+}
+
+.kik_company_post_listing_select_row i {
+    padding-left: 7px;
+    font-size: 24px;
+}
+
+.kik_company_post_listing_select_row select {
+	padding-left: 25px;
+}
+
+.kik_company_post_listing_select_row_edit .form-group {
+	margin-bottom: 5px;
+}
+
+.kik-single-select .form-group{
+	margin-bottom: 0px;
+}
+
+.btn.btn-primary i, .btn.btn-danger i {
+	color: white;
+}
+
+/********************************************************************************************/
+/*                                   DATA TABLES DESIGN
+/********************************************************************************************/
+
+#datatable-elem-per-page{
+	display: inline-block;
+	width: auto;
+	margin: 0 5px;
+}
+
+.datatable-search-field{
+	width: auto;
+	display: inline;
+}
+
+.table.dataTable {
+	border-collapse: collapse;
+}
+
+/*only for the data table inside horizontal-form*/
+.form-horizontal .dataTables_length .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.dt-new-btn {
+	padding-left: 10px;
+}
+
+
+/**********************************************************************************************/
+/*								TABS CONTENT DESIGN
+/**********************************************************************************************/
+
+.workpoint-skeleton, .instructaj-skeleton{
+	display: none;
+}
+
+.tab-title {
+	margin-left: 15px;
+    padding-left: 7px;
+    border-left: 4px solid #5aa7e8;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.tab-title.no-margin-top{
+	margin-top: 0px;
+}
+
+.tab-title i {
+	font-size: 16px;
+}
+
+.form-horizontal .form-group.no-margin, .no-margin {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.remove-instructaj{
+	margin-top: -34px;
+	float:right;
+}
+
+/**********************************************************************************************/
+/*								CHECKBOX DESIGN
+/**********************************************************************************************/
+
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+.cr .cr-icon.glyphicon-ok:before{
+	font-size: 17px;
+	color: grey;
+}
+
+.checkbox .cr {
+	width: 25px;
+	height: 25px;
+}
+
+.checkbox label.checkbox-label {
+	padding-left: 0px;
+}
+
+.checkbox .cr .cr-icon{
+	left: 3px;
+}
+
+/**********************************************************************************************/
+/*								PDF LINK DESIGN
+/**********************************************************************************************/
+.pdf-img {
+	width: 30px;
+}
+
+.pdf-anchor:hover {
+	text-decoration: none;
+}
+
+.pdf-link:hover {
+	color: #23527c;
+}
+
+
+/*********************************/
+/*   PREVIEW PDF             */
+/*********************************/
+
+.report_container {
+	padding: 15px 0;
+	background: #cdcdcd;
+	-webkit-box-shadow: inset 0px 0px 207px -42px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 207px -42px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 207px -42px rgba(0,0,0,0.75);
+	overflow: auto;
+	max-height: 827px;
+}
+.report_sheet {
+	box-sizing: border-box;
+	width: 827px;
+	min-height: 1169px;
+	padding: 30px 50px 30px 70px;
+	margin: 20px auto;
+	background: #ffffff;
+	border: 1px solid #000000;
+	-webkit-box-shadow: 0px 7px 26px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 7px 26px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 7px 26px 2px rgba(0,0,0,0.75);
+}
+.report_sheet.landscape {
+	width: 1169px;
+	min-height: 800px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.report_sheet > p {
+	min-height: 16px;
+	padding: 0;
+	margin: 0;
+}
+.report_field {
+	border-bottom: 1px solid #000000;
+}
+
+.rap-sem-table tr td,  .rap-sem-table tr th{
+	font-size:10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+.reports-title {
+	margin-left: 0px;
+	margin-bottom: 20px;
+	line-height: 27px;
+}
+
+.pos-relative{
+	position: relative;
+}
+
+.pos-absolute {
+	position: absolute;
+}
+
+.bg-danger{
+	background-color: rgba(255, 215, 223, 0.7)!important;
+	color: #fff;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
+.cursor-pointer.disabled{
+	color: grey;
+}
+
+.multiselect-companies .col-sm-12 {
+	margin-bottom: 10px;
+}
+
+.nav-tabs>li.active>a .count-posts, 
+.nav-tabs>li.active>a:focus .count-posts, 
+.nav-tabs>li.active>a:hover .count-posts {
+	color: #555;
+}
+
+a:hover .count-posts {
+	color: #23527c;
+}
+
+a .count-posts {
+	color: #337ab7;
+}
+
+
+.dashicons{
+	height: 25px;
+	width: 25px;
+	font-size: 25px;
+}
+
+.dashicon-red{
+	color: #d9534f;
+}
+
+.dashicon-blue{
+	color: #337ab7;
+}
+
+.message-container{
+	padding: 15px 15px 0 15px;
+}

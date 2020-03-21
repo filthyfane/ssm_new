@@ -1,0 +1,96 @@
+
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
+
+/*** FRONTEND ***/
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arimo', sans-serif;
+	size: 13px;
+}
+pre { font-family: 'Courier New', Courier, monospace; }
+#wrapper {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+#header {
+	position: fixed;
+	z-index: 300;
+	width: 960px;
+	margin: 0 auto;
+	height: 100px;
+	background: black;
+	color: white;
+	overflow: hidden;
+}
+#content > .kik_company {
+	padding-top: 150px;
+}
+
+
+/*** SIZES ***/
+.size_full_W_full_H {
+	width: 100%;
+	height: 100%;
+}
+.size_full_W {
+	width: 100%;
+}
+.size_full_W_2_rows {
+	width: 100%;
+	height: 50px;
+}
+.size_xs { width: 100px; }
+.size_s { width: 200px; }
+.size_m { width: 300px; }
+.size_l { width: 400px; }
+.size_xl { width: 500px; }
+.size_xxl { width: 600px; }
+.size_xs_p { width: 8%; }
+.size_s_p { width: 12%; }
+.size_m_p { width: 20%; }
+.size_l_p { width: 30%; }
+.size_xl_p { width: 40%; }
+.size_xxl_p { width: 60%; }
+.size_50px { width: 50px; }
+
+.box_H_margin {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*** COLORS ***/
+.color-red { color: #dc230c; }
+.color-orange { color: #EB8500; }
+.color-blue { color: #1155cc; }
+.color-green { color: #148908; }
+
+/*** ALIGNMENT ***/
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+
+/*** DISPLAY ***/
+.display-none { display: none; }
+.display-block { display: block; }
+
+
+
+/*** ***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
